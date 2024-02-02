@@ -1,0 +1,371 @@
+#########################################
+#---ORACLE 10 PA CENTRALIZADO
+#########################################
+#---DESARROLLO
+
+TPAEDU10=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=10.10.7.34)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=tpaedu10)
+    )
+  )
+
+TPA10=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=10.10.6.195)
+      (PORT=1525)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SID=TPA10)
+    )
+  )
+
+#---INTEGRACION
+
+PPA10=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=ppa10.pa)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SID=PPA10)
+    )
+  )
+
+PPAEDU10=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=ppaedu10.pa)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=ppaedu10)
+    )
+  )
+
+#---PRODUCCION
+
+PA10=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=pa10.pa)
+      (PORT=1533)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SID=pa10)
+    )
+  )
+
+PAEDU10=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=10.10.3.71)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=paedu10)
+    )
+  )
+
+#########################################
+#---ORACLE 11 PA CENTRALIZADO
+#########################################
+#---DESARROLLO
+
+TPA11FR=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=tpa11fr.pa)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=TPA11FR)
+    )
+  )
+
+TPA11UTF8=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=tpa11utf8.pa)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=TPA11UTF8)
+    )
+  )
+
+TPA11=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=tpa11.pa)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=TPA11)
+    )
+  )
+
+TPAEDU11=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=tpaedu11.pa)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=TPAEDU11)
+    )
+  )
+
+#---INTEGRACION
+
+PPA11FR=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=ppa11fr.pa)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=PPA11FR)
+    )
+  )
+
+PPA11UTF8=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=10.10.8.51)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=PPA11UTF8)
+    )
+  )
+
+PPA11=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=ppa11.pa)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=PPA11)
+    )
+  )
+
+PPAEDU11=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=ppaedu11.pa)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=PPAEDU11)
+    )
+  )
+
+#---PRODUCCION
+
+PA11=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=pa11.pa)
+      (PORT=1522)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=PA11)
+    )
+  )
+
+PA11FR=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=pa11fr.pa)
+      (PORT=1522)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=PA11FR)
+    )
+  )
+
+PA11UTF8=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=pa11utf8.pa)
+      (PORT=1522)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=PA11UTF8)
+    )
+  )
+
+PAEDU11=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=paedu11.pa)
+      (PORT=1522)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=PAEDU11)
+    )
+  )
+
+#########################################
+#---ORACLE12 PA CENTRALIZADO
+#########################################
+#---DESARROLLO
+
+TPA12=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=tpa12.pa)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=TPA12)
+    )
+  )
+
+#---INTEGRACION
+
+PPA12=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=ppa12.pa)
+      (PORT=1524)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=PPA12)
+    )
+  )
+
+PPA12FR=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=172.29.129.25)
+      (PORT=1524)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=PPA12FR)
+    )
+  )
+
+#---PRODUCCION
+#########################################
+#---OSB
+######################################### 
+
+OSB=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=172.28.178.30)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=OSB)
+    )
+  )
+
+TOSB=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=172.30.0.73)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=TOSB)
+    )
+  )
+
+POSB=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=172.29.129.17)
+      (PORT=1524)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=POSB)
+    )
+  )
+
+#########################################
+#---SAUCE
+######################################### 
+
+SAUCE=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=SAUCE11.princast.org)
+      (PORT=1522)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=SAUCE11)
+    )
+  )
+
+TSTSSCC_OV9DLNX003=
+  (DESCRIPTION=
+    (ADDRESS=
+      (PROTOCOL=TCP)
+      (HOST=10.148.84.4)
+      (PORT=1521)
+    )
+    (CONNECT_DATA=
+      (SERVER=dedicated)
+      (SERVICE_NAME=TSTSSCC)
+    )
+  )
