@@ -1,0 +1,68 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+ xmlns:xsi="http://www.w10.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <mirrors>	
+		<!--<mirror>
+            <id>nexus</id>
+            <mirrorOf>*</mirrorOf>
+           <url>http://10.10.6.12:8081/nexus/content/groups/public</url>
+        </mirror>-->
+  
+		<mirror>
+            <id>nexus</id>
+            <mirrorOf>*</mirrorOf>
+           <url>http://nexus.mntpa.ricoh.es/repository/public</url>
+	<servers>
+		<server>  
+		   <id>inhouse.snapshots</id>
+		   <username>admin</username>
+		   <password>******</password>
+		  </server>	 
+	</servers>
+	
+  
+ <profiles>
+  
+   <profile>
+     <id>nexus</id>
+	 
+    <pluginRepositories>
+       <pluginRepository>
+         <id>central</id>
+         <url>http://central</url>
+         <releases><enabled>true</enabled></releases>
+         <snapshots><enabled>true</enabled></snapshots>
+       </pluginRepository>
+     </pluginRepositories>
+         
+	 <properties> 
+	  <oc4j.home>c:/desarrollo/java/install/oc4j</oc4j.home>
+	  <svn.base.j2ee>http://clinker-frontend/svn/appsj2ee</svn.base.j2ee>
+	  <distribution.url.release>https://nexus.mntpa.ricoh.es/repository/maven-releases/</distribution.url.release>
+	  <distribution.url.snapshot>https://nexus.mntpa.ricoh.es/repository/maven-snapshots/</distribution.url.snapshot>
+	  <maven.test.skip>true</maven.test.skip>
+	  <apps.base.dir>c:/config</apps.base.dir>
+	  <cache.dir>c:/temp</cache.dir>
+	  
+	  <jboss-as.username>jbadmin</jboss-as.username>
+      <jboss-as.password>Password1$</jboss-as.password> 
+	  <wildfly.protocol>remoting</wildfly.protocol>
+	  <wildfly.port>9999</wildfly.port>
+	  <wildfly.username>${jboss-as.username}</wildfly.username>
+	  <wildfly.password>${jboss-as.password}</wildfly.password>
+	  
+	  <git.user>*****</git.user>
+	  <git.password>******</git.password>
+	  
+	 </properties>
+ 
+   </profile>
+     
+ </profiles>
+ 
+ <activeProfiles>
+   <activeProfile>nexus</activeProfile>
+ </activeProfiles>
+
+</settings>
