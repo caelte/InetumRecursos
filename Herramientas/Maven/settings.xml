@@ -2,7 +2,8 @@
  xmlns:xsi="http://www.w10.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://maven.apache.org/xsd/settings-1.0.0.xsd">
 
-  <mirrors>	
+  <mirrors>
+		
 		<!--<mirror>
             <id>nexus</id>
             <mirrorOf>*</mirrorOf>
@@ -13,13 +14,18 @@
             <id>nexus</id>
             <mirrorOf>*</mirrorOf>
            <url>http://nexus.mntpa.ricoh.es/repository/public</url>
-	<servers>
-		<server>  
-		   <id>inhouse.snapshots</id>
-		   <username>admin</username>
-		   <password>******</password>
-		  </server>	 
-	</servers>
+        </mirror>
+  </mirrors>
+
+
+ 
+  <servers>
+	<server>  
+		  <id>inhouse.snapshots</id>
+		  <username>admin</username>
+		  <password>*****</password>
+	</server>		 
+  </servers>
 	
   
  <profiles>
@@ -53,16 +59,20 @@
 	  <wildfly.password>${jboss-as.password}</wildfly.password>
 	  
 	  <git.user>*****</git.user>
-	  <git.password>******</git.password>
+	  <git.password>*****</git.password>
 	  
 	 </properties>
  
    </profile>
-     
+   
+		
+   
  </profiles>
  
  <activeProfiles>
    <activeProfile>nexus</activeProfile>
  </activeProfiles>
+
+ 
 
 </settings>
