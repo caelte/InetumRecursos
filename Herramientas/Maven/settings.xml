@@ -4,34 +4,79 @@
 
   <mirrors>
 		
-		<!--<mirror>
+	<!--<mirror>
             <id>nexus</id>
             <mirrorOf>*</mirrorOf>
            <url>http://10.10.6.12:8081/nexus/content/groups/public</url>
         </mirror>-->
-  
-		<mirror>
+		
+	<mirror>
             <id>nexus</id>
             <mirrorOf>*</mirrorOf>
-           <url>http://nexus.mntpa.ricoh.es/repository/public</url>
+           <url>https://nexus.asnw.inetum.com/repository/public</url>
         </mirror>
+
+	<!--<mirror>
+            <id>nexus</id>
+            <mirrorOf>*</mirrorOf>
+           <url>http://central.maven.org/maven2/</url>
+        </mirror>-->
+
+	<!--<mirror>
+            <id>nexus</id>
+            <mirrorOf>*</mirrorOf>
+           <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+        </mirror>-->
+	
+	<!--<mirror>
+            <id>nexus</id>
+            <mirrorOf>*</mirrorOf>
+           <url>https://repository.jboss.org/nexus/content/groups/public-jboss</url>
+        </mirror>-->
   </mirrors>
 
 
  
-  <servers>
+<servers>
+	
+		<!--<server>  
+		   <id>inhouse.snapshots</id>
+		   <username>admin</username>
+		   <password>4stur14s</password>
+		</server>-->
+		
 	<server>  
-		  <id>inhouse.snapshots</id>
-		  <username>admin</username>
-		  <password>*****</password>
-	</server>		 
-  </servers>
+            <id>inhouse.releases</id>
+            <username>mantenimiento</username>
+            <password>mantenimiento</password>
+        </server>
+ 
+        <server>  
+            <id>inhouse.snapshots</id>
+            <username>mantenimiento</username>
+            <password>mantenimiento</password>
+        </server>
+		
+		 
+</servers>
 	
   
  <profiles>
   
    <profile>
      <id>nexus</id>
+	 
+     <!--<repositories>
+       <repository>
+         <id>central</id>
+         <url>http://central.maven.org/maven2/</url>
+         <releases><enabled>true</enabled></releases>
+         <snapshots><enabled>true</enabled></snapshots>
+       </repository>
+	   
+	   
+	    
+     </repositories>-->
 	 
     <pluginRepositories>
        <pluginRepository>
@@ -45,21 +90,22 @@
 	 <properties> 
 	  <oc4j.home>c:/desarrollo/java/install/oc4j</oc4j.home>
 	  <svn.base.j2ee>http://clinker-frontend/svn/appsj2ee</svn.base.j2ee>
-	  <distribution.url.release>https://nexus.mntpa.ricoh.es/repository/maven-releases/</distribution.url.release>
-	  <distribution.url.snapshot>https://nexus.mntpa.ricoh.es/repository/maven-snapshots/</distribution.url.snapshot>
+	  <distribution.url.release>https://nexus.asnw.inetum.com/repository/maven-releases/</distribution.url.release>
+          <distribution.url.snapshot>https://nexus.asnw.inetum.com/repository/maven-snapshots/</distribution.url.snapshot>
+	  
 	  <maven.test.skip>true</maven.test.skip>
 	  <apps.base.dir>c:/config</apps.base.dir>
 	  <cache.dir>c:/temp</cache.dir>
 	  
 	  <jboss-as.username>jbadmin</jboss-as.username>
-      <jboss-as.password>Password1$</jboss-as.password> 
+      	  <jboss-as.password>Password1$</jboss-as.password> 
 	  <wildfly.protocol>remoting</wildfly.protocol>
 	  <wildfly.port>9999</wildfly.port>
 	  <wildfly.username>${jboss-as.username}</wildfly.username>
 	  <wildfly.password>${jboss-as.password}</wildfly.password>
-	  
-	  <git.user>*****</git.user>
-	  <git.password>*****</git.password>
+
+	  <git.user>******</git.user>
+	  <git.password>******</git.password>
 	  
 	 </properties>
  
